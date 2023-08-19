@@ -4,6 +4,7 @@ import { IProductCard } from "../../../Interfaces";
 
 describe("ProductCard", () => {
   const sampleProduct: IProductCard = {
+    id: "Test id",
     title: "Sample Product",
     price: "100.00",
     currency_id: "UYU",
