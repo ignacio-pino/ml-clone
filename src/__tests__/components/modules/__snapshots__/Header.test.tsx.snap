@@ -1,0 +1,87 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Header Component > matches snapshot 1`] = `
+<div>
+  <div
+    class="css-1qgk9u0"
+  >
+    <div
+      class="css-1vr8h81"
+    >
+      <img
+        class="chakra-image css-cbs51e"
+        src="/assets/handshake.png"
+      />
+      <div
+        class="chakra-input__group css-bx0blc"
+        data-group="true"
+      >
+        <form>
+          <input
+            class="chakra-input css-1ybc3d8"
+            placeholder="Busca productos, marcas y más..."
+            value=""
+          />
+        </form>
+        <div
+          class="chakra-input__right-element css-dp9r5f"
+        >
+          <div
+            class="css-1c2c1lm"
+          >
+            <div
+              class="chakra-stack css-cp3a5l"
+            >
+              <hr
+                aria-orientation="vertical"
+                class="chakra-divider css-lcs0ep"
+              />
+              <label
+                class="chakra-checkbox css-1v4t15a"
+              >
+                <input
+                  class="chakra-checkbox__input"
+                  style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; width: 1px; margin: -1px; padding: 0px; overflow: hidden; white-space: nowrap; position: absolute;"
+                  type="checkbox"
+                  value=""
+                />
+                <span
+                  aria-hidden="true"
+                  class="chakra-checkbox__control css-dnty2r"
+                />
+                <span
+                  class="chakra-checkbox__label css-1oeb2oe"
+                >
+                  Solo en 
+                  categoryNameTest
+                </span>
+              </label>
+              <hr
+                aria-orientation="vertical"
+                class="chakra-divider css-lcs0ep"
+              />
+            </div>
+            <button
+              aria-label="Buscar"
+              class="chakra-button css-p7mkev"
+              type="button"
+            >
+              <svg
+                aria-hidden="true"
+                class="chakra-icon css-onkibi"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M23.384,21.619,16.855,15.09a9.284,9.284,0,1,0-1.768,1.768l6.529,6.529a1.266,1.266,0,0,0,1.768,0A1.251,1.251,0,0,0,23.384,21.619ZM2.75,9.5a6.75,6.75,0,1,1,6.75,6.75A6.758,6.758,0,0,1,2.75,9.5Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

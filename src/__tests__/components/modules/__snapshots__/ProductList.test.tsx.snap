@@ -1,0 +1,124 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ProductList Component > matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="css-1ax7sdm"
+  >
+    <div
+      class="chakra-card css-1q6bp6q"
+      data-testid="productCard"
+      id="1"
+    >
+      <img
+        alt="Test Product 1"
+        class="chakra-image css-1bywttm"
+        src="test_image_url_1"
+      />
+      <div
+        class="chakra-stack css-1qstkuz"
+      >
+        <div
+          class="chakra-card__body css-1knigk4"
+        >
+          <button
+            class="chakra-button css-12b0kss"
+            type="button"
+          >
+            <span
+              class="css-1baulvz"
+              tabindex="0"
+            >
+              Test Product 1
+            </span>
+          </button>
+          <del
+            class="chakra-stack css-h9jpb5"
+          >
+            <p
+              class="chakra-text css-1nggxx3"
+            >
+              U$S 100
+            </p>
+            <p
+              class="chakra-text css-qc7exc"
+            />
+          </del>
+          <div
+            class="chakra-stack css-usuplf"
+          >
+            <div
+              class="chakra-stack css-u2zw5"
+            >
+              <b
+                class="chakra-text css-4ww9f7"
+              >
+                U$S 90
+              </b>
+              <b
+                class="chakra-text css-to2aqv"
+              />
+            </div>
+            <p
+              class="chakra-text css-19ff2qr"
+            >
+              10% OFF
+            </p>
+          </div>
+          <mark
+            class="chakra-text css-1d599vv"
+          >
+            Envío gratis
+          </mark>
+        </div>
+      </div>
+    </div>
+    <div
+      class="chakra-card css-1q6bp6q"
+      data-testid="productCard"
+      id="2"
+    >
+      <img
+        alt="Test Product 2"
+        class="chakra-image css-1bywttm"
+        src="test_image_url_2"
+      />
+      <div
+        class="chakra-stack css-1qstkuz"
+      >
+        <div
+          class="chakra-card__body css-1knigk4"
+        >
+          <button
+            class="chakra-button css-12b0kss"
+            type="button"
+          >
+            <span
+              class="css-1baulvz"
+              tabindex="0"
+            >
+              Test Product 2
+            </span>
+          </button>
+          <div
+            class="chakra-stack css-1hdaorj"
+          >
+            <div
+              class="chakra-stack css-u2zw5"
+            >
+              <b
+                class="chakra-text css-4ww9f7"
+              >
+                $ 80
+              </b>
+              <b
+                class="chakra-text css-to2aqv"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

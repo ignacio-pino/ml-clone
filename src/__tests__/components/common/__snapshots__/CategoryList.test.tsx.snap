@@ -1,0 +1,466 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`FilterList Component > matches snapshot with mostrar mas button 1`] = `
+<div>
+  <div
+    class="chakra-stack css-8g8ihq"
+    id="test"
+  >
+    <div
+      class="css-s98few"
+    >
+      <b
+        class="chakra-text css-0"
+      >
+        Test Filter
+      </b>
+      <div
+        class="chakra-stack css-8g8ihq"
+      >
+        <div
+          class="chakra-stack css-1igwmid"
+        >
+          <button
+            class="chakra-button css-eehfob"
+            type="button"
+          >
+            <p
+              class="chakra-text css-p2jx2e"
+            >
+              Value 1
+            </p>
+            <p
+              class="chakra-text css-5e9grg"
+            >
+              (
+              5
+              )
+            </p>
+             
+          </button>
+        </div>
+      </div>
+      <div
+        class="chakra-stack css-8g8ihq"
+      >
+        <div
+          class="chakra-stack css-1igwmid"
+        >
+          <button
+            class="chakra-button css-eehfob"
+            type="button"
+          >
+            <p
+              class="chakra-text css-p2jx2e"
+            >
+              Value 2
+            </p>
+            <p
+              class="chakra-text css-5e9grg"
+            >
+              (
+              10
+              )
+            </p>
+             
+          </button>
+        </div>
+      </div>
+      <div
+        class="chakra-stack css-8g8ihq"
+      >
+        <div
+          class="chakra-stack css-1igwmid"
+        >
+          <button
+            class="chakra-button css-eehfob"
+            type="button"
+          >
+            <p
+              class="chakra-text css-p2jx2e"
+            >
+              Value 3
+            </p>
+            <p
+              class="chakra-text css-5e9grg"
+            >
+              (
+              15
+              )
+            </p>
+             
+          </button>
+        </div>
+      </div>
+      <div
+        class="chakra-stack css-8g8ihq"
+      >
+        <div
+          class="chakra-stack css-1igwmid"
+        >
+          <button
+            class="chakra-button css-eehfob"
+            type="button"
+          >
+            <p
+              class="chakra-text css-p2jx2e"
+            >
+              Value 4
+            </p>
+            <p
+              class="chakra-text css-5e9grg"
+            >
+              (
+              20
+              )
+            </p>
+             
+          </button>
+        </div>
+      </div>
+      <div
+        class="chakra-stack css-8g8ihq"
+      >
+        <div
+          class="chakra-stack css-1igwmid"
+        >
+          <button
+            class="chakra-button css-eehfob"
+            type="button"
+          >
+            <p
+              class="chakra-text css-p2jx2e"
+            >
+              Value 5
+            </p>
+            <p
+              class="chakra-text css-5e9grg"
+            >
+              (
+              25
+              )
+            </p>
+             
+          </button>
+        </div>
+      </div>
+      <div
+        class="chakra-stack css-8g8ihq"
+      >
+        <div
+          class="chakra-stack css-1igwmid"
+        >
+          <button
+            class="chakra-button css-eehfob"
+            type="button"
+          >
+            <p
+              class="chakra-text css-p2jx2e"
+            >
+              Value 6
+            </p>
+            <p
+              class="chakra-text css-5e9grg"
+            >
+              (
+              30
+              )
+            </p>
+             
+          </button>
+        </div>
+      </div>
+      <div
+        class="chakra-stack css-8g8ihq"
+      >
+        <div
+          class="chakra-stack css-1igwmid"
+        >
+          <button
+            class="chakra-button css-eehfob"
+            type="button"
+          >
+            <p
+              class="chakra-text css-p2jx2e"
+            >
+              Value 7
+            </p>
+            <p
+              class="chakra-text css-5e9grg"
+            >
+              (
+              35
+              )
+            </p>
+             
+          </button>
+        </div>
+      </div>
+      <div
+        class="chakra-stack css-8g8ihq"
+      >
+        <div
+          class="chakra-stack css-1igwmid"
+        >
+          <button
+            class="chakra-button css-eehfob"
+            type="button"
+          >
+            <p
+              class="chakra-text css-p2jx2e"
+            >
+              Value 8
+            </p>
+            <p
+              class="chakra-text css-5e9grg"
+            >
+              (
+              40
+              )
+            </p>
+             
+          </button>
+        </div>
+      </div>
+      <button
+        aria-label="Mostrar mas o menos resultados"
+        class="chakra-button css-g8od8h"
+        type="button"
+      >
+        Mostrar más
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`FilterList Component > matches snapshot with range fields 1`] = `
+<div>
+  <div
+    class="chakra-stack css-8g8ihq"
+    id="test"
+  >
+    <div
+      class="css-s98few"
+    >
+      <b
+        class="chakra-text css-0"
+      >
+        Test Filter
+      </b>
+      <div
+        class="chakra-stack css-8g8ihq"
+      >
+        <div
+          class="chakra-stack css-1igwmid"
+        >
+          <button
+            class="chakra-button css-eehfob"
+            type="button"
+          >
+            <p
+              class="chakra-text css-p2jx2e"
+            >
+              Value 1
+            </p>
+            <p
+              class="chakra-text css-5e9grg"
+            >
+              (
+              5
+              )
+            </p>
+             
+          </button>
+        </div>
+      </div>
+      <div
+        class="chakra-stack css-8g8ihq"
+      >
+        <div
+          class="chakra-stack css-1igwmid"
+        >
+          <button
+            class="chakra-button css-eehfob"
+            type="button"
+          >
+            <p
+              class="chakra-text css-p2jx2e"
+            >
+              Value 2
+            </p>
+            <p
+              class="chakra-text css-5e9grg"
+            >
+              (
+              10
+              )
+            </p>
+             
+          </button>
+        </div>
+      </div>
+      <div
+        class="chakra-stack css-8g8ihq"
+      >
+        <div
+          class="chakra-stack css-1igwmid"
+        >
+          <button
+            class="chakra-button css-eehfob"
+            type="button"
+          >
+            <p
+              class="chakra-text css-p2jx2e"
+            >
+              Value 3
+            </p>
+            <p
+              class="chakra-text css-5e9grg"
+            >
+              (
+              15
+              )
+            </p>
+             
+          </button>
+        </div>
+      </div>
+      <div
+        class="chakra-stack css-1igwmid"
+      >
+        <input
+          class="chakra-input css-uo3m1g"
+          placeholder="Min."
+          type="number"
+          value=""
+        />
+        <hr
+          aria-orientation="horizontal"
+          class="chakra-divider css-tztl8c"
+        />
+        <input
+          class="chakra-input css-uo3m1g"
+          placeholder="Max."
+          type="number"
+          value=""
+        />
+        <button
+          aria-label="Buscar rango"
+          class="chakra-button css-mn3g0g"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="chakra-icon css-onkibi"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+              fill="currentColor"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`FilterList Component > matches snapshot without mostrar mas button 1`] = `
+<div>
+  <div
+    class="chakra-stack css-8g8ihq"
+    id="test"
+  >
+    <div
+      class="css-s98few"
+    >
+      <b
+        class="chakra-text css-0"
+      >
+        Test Filter
+      </b>
+      <div
+        class="chakra-stack css-8g8ihq"
+      >
+        <div
+          class="chakra-stack css-1igwmid"
+        >
+          <button
+            class="chakra-button css-eehfob"
+            type="button"
+          >
+            <p
+              class="chakra-text css-p2jx2e"
+            >
+              Value 1
+            </p>
+            <p
+              class="chakra-text css-5e9grg"
+            >
+              (
+              5
+              )
+            </p>
+             
+          </button>
+        </div>
+      </div>
+      <div
+        class="chakra-stack css-8g8ihq"
+      >
+        <div
+          class="chakra-stack css-1igwmid"
+        >
+          <button
+            class="chakra-button css-eehfob"
+            type="button"
+          >
+            <p
+              class="chakra-text css-p2jx2e"
+            >
+              Value 2
+            </p>
+            <p
+              class="chakra-text css-5e9grg"
+            >
+              (
+              10
+              )
+            </p>
+             
+          </button>
+        </div>
+      </div>
+      <div
+        class="chakra-stack css-8g8ihq"
+      >
+        <div
+          class="chakra-stack css-1igwmid"
+        >
+          <button
+            class="chakra-button css-eehfob"
+            type="button"
+          >
+            <p
+              class="chakra-text css-p2jx2e"
+            >
+              Value 3
+            </p>
+            <p
+              class="chakra-text css-5e9grg"
+            >
+              (
+              15
+              )
+            </p>
+             
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
