@@ -1,0 +1,83 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ProductCard > should match snapshot 1`] = `
+<div>
+  <div
+    class="chakra-card css-1q6bp6q"
+    data-testid="productCard"
+    id="Test id"
+  >
+    <img
+      alt="Sample Product"
+      class="chakra-image css-1bywttm"
+      src="sample-thumbnail-url"
+    />
+    <div
+      class="chakra-stack css-1qstkuz"
+    >
+      <div
+        class="chakra-card__body css-1knigk4"
+      >
+        <button
+          class="chakra-button css-12b0kss"
+          type="button"
+        >
+          <span
+            class="css-1baulvz"
+            tabindex="0"
+          >
+            Sample Product
+          </span>
+        </button>
+        <del
+          class="chakra-stack css-h9jpb5"
+        >
+          <p
+            class="chakra-text css-1nggxx3"
+          >
+            $
+             
+            120
+          </p>
+          <p
+            class="chakra-text css-qc7exc"
+          >
+            00
+          </p>
+        </del>
+        <div
+          class="chakra-stack css-usuplf"
+        >
+          <div
+            class="chakra-stack css-u2zw5"
+          >
+            <b
+              class="chakra-text css-4ww9f7"
+            >
+              $
+               
+              100
+            </b>
+            <b
+              class="chakra-text css-to2aqv"
+            >
+              00
+            </b>
+          </div>
+          <p
+            class="chakra-text css-19ff2qr"
+          >
+            16
+            % OFF
+          </p>
+        </div>
+        <mark
+          class="chakra-text css-1d599vv"
+        >
+          Envío gratis
+        </mark>
+      </div>
+    </div>
+  </div>
+</div>
+`;
