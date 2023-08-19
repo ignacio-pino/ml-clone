@@ -1,0 +1,52 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`CategoryBreadcrumbs Component > matches snapshot 1`] = `
+<div>
+  <nav
+    aria-label="breadcrumb"
+    class="chakra-breadcrumb css-1rsh7lu"
+  >
+    <ol
+      class="chakra-breadcrumb__list css-70qvj9"
+    >
+      <li
+        class="chakra-breadcrumb__list-item css-18biwo"
+      >
+        <a
+          class="chakra-breadcrumb__link css-0"
+          id="1"
+        >
+           
+          Root
+        </a>
+        <span
+          class="css-syhbcg"
+          role="presentation"
+        >
+          <svg
+            class="chakra-icon css-2u1jce"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+              fill="currentColor"
+            />
+          </svg>
+        </span>
+      </li>
+      <li
+        class="chakra-breadcrumb__list-item css-18biwo"
+      >
+        <a
+          class="chakra-breadcrumb__link css-0"
+          id="2"
+        >
+           
+          Level1
+        </a>
+      </li>
+    </ol>
+  </nav>
+</div>
+`;
