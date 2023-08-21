@@ -6,9 +6,11 @@ import { createSearchParams, useNavigate } from "react-router-dom";
 export default function CategoryBreadcrumbs({
   pathFromRoot,
   categoryId,
+  includeCurrentCategory,
 }: {
   pathFromRoot: IPathFromRoot[];
-  categoryId: string;
+  categoryId?: string;
+  includeCurrentCategory?: boolean;
 }) {
   const navigate = useNavigate();
 
@@ -29,7 +31,7 @@ export default function CategoryBreadcrumbs({
       maxW={"70%"}
     >
       {pathFromRoot?.map(({ id, name }) => {
-        return id === categoryId ? null : (
+        return id === categoryId && !includeCurrentCategory ? null : (
           <BreadcrumbItem>
             <BreadcrumbLink id={id} onClick={handleClick}>
               {" "}
