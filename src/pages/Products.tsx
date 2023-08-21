@@ -69,7 +69,6 @@ export default function Products() {
           )?.values,
           query: data.query,
         });
-        console.log(categoryData);
       }
     );
   }, [search]);

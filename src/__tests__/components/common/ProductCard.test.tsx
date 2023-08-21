@@ -1,6 +1,13 @@
-import { render, screen } from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
 import ProductCard from "../../../components/common/ProductCard";
 import { IProductCard } from "../../../Interfaces";
+
+const mockedUseNavigate = vitest.fn();
+
+vitest.mock("react-router-dom", () => ({
+  ...require("react-router-dom"),
+  useNavigate: () => mockedUseNavigate,
+}));
 
 describe("ProductCard", () => {
   const sampleProduct: IProductCard = {
@@ -62,5 +69,17 @@ describe("ProductCard", () => {
 
     expect(priceElement).toBeInTheDocument();
     expect(originalPriceElement).toBeInTheDocument();
+  });
+
+  it("should redirect to item page when clicking the product name", () => {
+    render(<ProductCard {...sampleProduct} />);
+
+    const titleElement = screen.getByText("Sample Product");
+    fireEvent.click(titleElement);
+
+    expect(mockedUseNavigate).toHaveBeenCalledWith({
+      pathname: "/item",
+      search: "item=Test+id",
+    });
   });
 });
