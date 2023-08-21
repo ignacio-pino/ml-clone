@@ -9,6 +9,7 @@ import {
   Button,
 } from "@chakra-ui/react";
 import { IProductCard } from "../../Interfaces";
+import { createSearchParams, useNavigate } from "react-router-dom";
 
 export default function ProductCard({
   id,
@@ -19,6 +20,17 @@ export default function ProductCard({
   free_shipping,
   thumbnail,
 }: IProductCard) {
+  const navigate = useNavigate();
+
+  const params = { item: id };
+
+  const handleClick = () => {
+    navigate({
+      pathname: "/item",
+      search: `${createSearchParams(params)}`,
+    });
+  };
+
   return (
     <Card
       data-testid="productCard"
@@ -39,6 +51,7 @@ export default function ProductCard({
             mt={-2}
             noOfLines={1}
             textOverflow={"ellipsis"}
+            onClick={() => handleClick()}
           >
             <Tooltip
               openDelay={500}

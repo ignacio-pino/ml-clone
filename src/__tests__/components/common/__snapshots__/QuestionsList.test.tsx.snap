@@ -1,0 +1,144 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`QuestionsList Component > should match snapshot 1`] = `
+<div>
+  <div
+    class="chakra-stack css-f5fnvy"
+  >
+    <p
+      class="chakra-text css-0"
+    >
+      Preguntas y respuestas
+    </p>
+    <div
+      class="chakra-stack css-zztjb4"
+    >
+      <input
+        class="chakra-input css-1smfaui"
+        placeholder="Escribe tu pregunta"
+      />
+      <button
+        class="chakra-button css-1s8cab6"
+        type="button"
+      >
+        Preguntar
+      </button>
+    </div>
+    <div
+      class="css-0"
+    >
+      <div
+        class="css-1caknck"
+      >
+        <p
+          class="chakra-text css-0"
+        >
+          What is the product made of?
+        </p>
+        <div
+          class="chakra-stack css-1pkewcz"
+        >
+          <p
+            class="chakra-text css-thg5cc"
+          >
+            L
+          </p>
+          <p
+            class="chakra-text css-77frxq"
+          >
+            The product is made of wood.
+             
+            <span
+              class="chakra-text css-131f7pn"
+            >
+              01/01/2023
+            </span>
+          </p>
+        </div>
+      </div>
+      <div
+        class="css-1caknck"
+      >
+        <p
+          class="chakra-text css-0"
+        >
+          Is the product available in other colors?
+        </p>
+      </div>
+      <div
+        class="css-1caknck"
+      >
+        <p
+          class="chakra-text css-0"
+        >
+          How much does the product weigh?
+        </p>
+        <div
+          class="chakra-stack css-1pkewcz"
+        >
+          <p
+            class="chakra-text css-thg5cc"
+          >
+            L
+          </p>
+          <p
+            class="chakra-text css-77frxq"
+          >
+            The product weighs 2kg.
+             
+            <span
+              class="chakra-text css-131f7pn"
+            >
+              05/02/2023
+            </span>
+          </p>
+        </div>
+      </div>
+      <div
+        class="css-1caknck"
+      >
+        <p
+          class="chakra-text css-0"
+        >
+          Can the product be customized?
+        </p>
+      </div>
+      <div
+        class="css-1caknck"
+      >
+        <p
+          class="chakra-text css-0"
+        >
+          How long is the warranty for the product?
+        </p>
+        <div
+          class="chakra-stack css-1pkewcz"
+        >
+          <p
+            class="chakra-text css-thg5cc"
+          >
+            L
+          </p>
+          <p
+            class="chakra-text css-77frxq"
+          >
+            The product has a 1-year warranty.
+             
+            <span
+              class="chakra-text css-131f7pn"
+            >
+              01/03/2023
+            </span>
+          </p>
+        </div>
+      </div>
+      <button
+        class="chakra-button css-18d007l"
+        type="button"
+      >
+        Mostrar todas las preguntas
+      </button>
+    </div>
+  </div>
+</div>
+`;

@@ -76,3 +76,43 @@ export interface IHeaderCategoryData {
   categoryId: string;
   categoryName: string;
 }
+
+export interface IPictureList {
+  id: string;
+  url: string;
+}
+
+export interface IItemInformationList {
+  condition: "new" | "used";
+  sold_quantity: number;
+  title: string;
+  original_price: number;
+  price: number;
+  currency_id: "UYU" | "USD";
+  shipping: {
+    free_shipping: boolean;
+  };
+  available_quantity: number;
+}
+
+export interface IAttributeListData {
+  id: string;
+  name: string;
+  value_name: string | number;
+}
+
+export interface IQuestionsList {
+  id: string;
+  status: string;
+  text: string;
+  answer: {
+    text: string;
+    date_created: string;
+  };
+}
+
+export interface IPaymentMethods {
+  payment_type_id: string;
+  id: string;
+  thumbnail: string;
+}
