@@ -1,0 +1,69 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`AttributeList Component > should match snapshot 1`] = `
+<div>
+  <div
+    class="css-0"
+  >
+    <b
+      class="chakra-text css-0"
+    >
+      Características
+    </b>
+    <div
+      class="chakra-table__container css-10e72oj"
+    >
+      <table
+        class="chakra-table css-1i60z40"
+      >
+        <tbody
+          class="css-0"
+        >
+          <tr
+            class="css-0"
+          >
+            <td
+              class="css-in3yi3"
+            >
+              Color
+            </td>
+            <td
+              class="css-0"
+            >
+              Red
+            </td>
+          </tr>
+          <tr
+            class="css-0"
+          >
+            <td
+              class="css-in3yi3"
+            >
+              Size
+            </td>
+            <td
+              class="css-0"
+            >
+              Medium
+            </td>
+          </tr>
+          <tr
+            class="css-0"
+          >
+            <td
+              class="css-in3yi3"
+            >
+              Material
+            </td>
+            <td
+              class="css-0"
+            >
+              Cotton
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+`;
