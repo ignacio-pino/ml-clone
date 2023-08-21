@@ -1,0 +1,89 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ImageGallery Component > should match snapshot 1`] = `
+<div>
+  <div
+    class="css-k008qs"
+  >
+    <div
+      class="chakra-stack css-jlrmky"
+    >
+      <button
+        class="chakra-button css-bilopy"
+        data-testid="imageButton-url1"
+        type="button"
+      >
+        <img
+          alt="imageButton-1"
+          class="chakra-image css-7f50zt"
+          src="url1"
+        />
+      </button>
+      <button
+        class="chakra-button css-bilopy"
+        data-testid="imageButton-url2"
+        type="button"
+      >
+        <img
+          alt="imageButton-2"
+          class="chakra-image css-7f50zt"
+          src="url2"
+        />
+      </button>
+      <button
+        class="chakra-button css-bilopy"
+        data-testid="imageButton-url3"
+        type="button"
+      >
+        <img
+          alt="imageButton-3"
+          class="chakra-image css-7f50zt"
+          src="url3"
+        />
+      </button>
+      <button
+        class="chakra-button css-bilopy"
+        data-testid="imageButton-url4"
+        type="button"
+      >
+        <img
+          alt="imageButton-4"
+          class="chakra-image css-7f50zt"
+          src="url4"
+        />
+      </button>
+      <button
+        class="chakra-button css-bilopy"
+        data-testid="imageButton-url5"
+        type="button"
+      >
+        <img
+          alt="imageButton-5"
+          class="chakra-image css-7f50zt"
+          src="url5"
+        />
+      </button>
+      <button
+        class="chakra-button css-bilopy"
+        data-testid="imageButton-url6"
+        type="button"
+      >
+        <img
+          alt="imageButton-6"
+          class="chakra-image css-7f50zt"
+          src="url6"
+        />
+      </button>
+    </div>
+    <div
+      class="css-wxs6zv"
+    >
+      <img
+        alt="1"
+        class="chakra-image css-zjazeo"
+        src="url1"
+      />
+    </div>
+  </div>
+</div>
+`;
