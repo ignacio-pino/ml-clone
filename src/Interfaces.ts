@@ -116,3 +116,46 @@ export interface IPaymentMethods {
   id: string;
   thumbnail: string;
 }
+
+export interface ISoldItem {
+  name: string;
+  status:
+    | "late"
+    | "prepareDispatch"
+    | "talkWithBuyer"
+    | "readyToDispatch"
+    | "onTheWay"
+    | "openClaim"
+    | "completed"
+    | "notCompleted";
+  price: number;
+  amount: number;
+  currency: "U$S" | "$";
+  code: number;
+  thumbnail: string;
+  date: string;
+  buyer: {
+    name: string;
+    thumbnail: string;
+    messages: {
+      newMessageAmount: number;
+      hasPreviousMessages: boolean;
+    };
+  };
+  details?: {
+    name: string;
+    value: string;
+  };
+}
+
+export interface IStatusCounts {
+  late?: number;
+  prepareDispatch?: number;
+  talkWithBuyer?: number;
+  readyToDispatch?: number;
+  onTheWay?: number;
+  openClaim?: number;
+  completed?: number;
+  notCompleted?: number;
+  unreadMessages?: number;
+}
