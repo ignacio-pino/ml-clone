@@ -1,27 +1,50 @@
-# React + TypeScript + Vite
+# Mercado Libre Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project was created as part of a technical take home interview.
 
-Currently, two official plugins are available:
+The requirements were as follows:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- As an user looking to buy:
+  -Be able to access a list of products. Said list should allow filtering and sorting.
+  -Be able to access details of a product and see relevant information such as pictures, questions, etc.
 
-## Expanding the ESLint configuration
+- As an user looking to sell:
+  -Be able to access a dashboard with a history of sales and other relevant information, a friendly presentation is valued along with the ability to filter sales by dates.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+The data was to be fetched from Mercado Libre's API or mocked locally.
 
-- Configure the top-level `parserOptions` property like this:
+The deadline for the project was 7 days.
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+## Stack used
+
+I decided to run this React project on **Vite** using **Typescript** , for ease of use and time savings I used **Chakra-UI** for the user interfaces.
+
+Along with that several utility libraries were used, such as **Vitest** and **React Testing Library** for testing purposes.
+
+Even though routing was not a requirement I opted on using **React Router** for a beter user experience and ease of access to data that would otherwise imply prop drilling or global state.
+
+## Other tools
+
+During development I used a **Figma** draft to help break up the UI and the data it would need, said draft can be found here: **https://www.figma.com/file/sD8hJWysjrbUrkYBeT9ZeO/ML-Clone?type=design&node-id=0%3A1&mode=design&t=sWz2tGQPnkgUxflK-1**
+
+Additionally, I deployed the site on **Vercel** so it would be easier to access and navigate through it: **https://ml-clone-eight.vercel.app/**
+
+## Installation
+
+The website can be ran locally by cloning the repository:
+
+```
+git clone https://github.com/ignacio-pino/ml-clone.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+After cloning the repo:
+
+```
+npm install
+```
+
+And finally:
+
+```
+npm run dev
+```
