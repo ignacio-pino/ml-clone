@@ -90,7 +90,6 @@ export default function Item() {
         return fetchData(urlItemQuestions);
       })
       .then((questionsData) => {
-        console.log(questionsData.questions);
         setQuestions(questionsData.questions);
       })
       .finally(() => {

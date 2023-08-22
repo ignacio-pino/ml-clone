@@ -10,6 +10,7 @@ import {
   Box,
   Divider,
   HStack,
+  Button,
 } from "@chakra-ui/react";
 import { useState } from "react";
 import { createSearchParams, useLocation, useNavigate } from "react-router-dom";
@@ -19,7 +20,7 @@ export default function Header({
   categoryId,
   categoryName,
 }: IHeaderCategoryData) {
-  const { search } = useLocation();
+  const { search, pathname } = useLocation();
   const searchParams = new URLSearchParams(search);
 
   const navigate = useNavigate();
@@ -49,65 +50,85 @@ export default function Header({
     });
   };
 
+  const handleNavigation = () => {
+    if (pathname === "/sales") {
+      navigate(-1);
+    } else {
+      navigate("/sales");
+    }
+  };
+
   return (
-    <Flex
-      w="100vw"
-      h="10vh"
-      backgroundColor="gray.900"
-      boxShadow="lg"
-      justifyContent="center"
-      alignItems="center"
-    >
-      <Flex justifyContent="space-evenly" alignItems="center">
-        <Image
-          src="/assets/handshake.png"
-          width="100px"
-          height="100px"
-          mr="2rem"
-        />
-        <InputGroup>
-          <form onSubmit={(event) => handleClick(event)}>
-            <Input
-              variant="filled"
-              placeholder="Busca productos, marcas y más..."
-              w="3xl"
-              value={searchValue}
-              onChange={(event) => setSearchValue(event.currentTarget.value)}
-            />
-          </form>
-          <InputRightElement>
-            <Box
-              display="flex"
-              alignItems="center"
-              justifyContent="flex-end"
-              width="100%"
-              gap={3}
-            >
-              {categoryName && (
-                <HStack gap={5}>
-                  <Divider orientation="vertical" color="gray.500" h="20px" />
+    <Box backgroundColor="gray.900" boxShadow="lg" mb={"3rem"}>
+      <Flex
+        w="100vw"
+        h="10vh"
+        backgroundColor="gray.900"
+        justifyContent="center"
+        alignItems="center"
+      >
+        <Flex justifyContent="space-evenly" alignItems="center">
+          <Image
+            src="/assets/handshake.png"
+            width="100px"
+            height="100px"
+            mr="2rem"
+            onClick={() => navigate("/")}
+            cursor={"pointer"}
+          />
 
-                  <Checkbox
-                    whiteSpace="nowrap"
-                    color="gray.500"
-                    onChange={() => setCategoryCheck(!categoryCheck)}
-                    isChecked={categoryCheck}
-                  >
-                    Solo en {categoryName}
-                  </Checkbox>
-
-                  <Divider orientation="vertical" color="gray.500" h="20px" />
-                </HStack>
-              )}
-              <IconButton
-                aria-label="Buscar"
-                icon={<SearchIcon />}
-                onClick={(event) => handleClick(event)}
+          <InputGroup>
+            <form onSubmit={(event) => handleClick(event)}>
+              <Input
+                variant="filled"
+                placeholder="Busca productos, marcas y más..."
+                w="3xl"
+                value={searchValue}
+                onChange={(event) => setSearchValue(event.currentTarget.value)}
               />
-            </Box>
-          </InputRightElement>
-        </InputGroup>
+            </form>
+            <InputRightElement>
+              <Box
+                display="flex"
+                alignItems="center"
+                justifyContent="flex-end"
+                width="100%"
+                gap={3}
+              >
+                {categoryName && (
+                  <HStack gap={5}>
+                    <Divider orientation="vertical" color="gray.500" h="20px" />
+
+                    <Checkbox
+                      whiteSpace="nowrap"
+                      color="gray.500"
+                      onChange={() => setCategoryCheck(!categoryCheck)}
+                      isChecked={categoryCheck}
+                    >
+                      Solo en {categoryName}
+                    </Checkbox>
+
+                    <Divider orientation="vertical" color="gray.500" h="20px" />
+                  </HStack>
+                )}
+                <IconButton
+                  aria-label="Buscar"
+                  icon={<SearchIcon />}
+                  onClick={(event) => handleClick(event)}
+                />
+              </Box>
+            </InputRightElement>
+          </InputGroup>
+        </Flex>
       </Flex>
-    </Flex>
+      <Button
+        variant="ghost"
+        marginLeft={"90vw"}
+        mr={"3rem"}
+        onClick={() => handleNavigation()}
+      >
+        {pathname === "/sales" ? "Volver a comprar" : "Mis ventas"}
+      </Button>
+    </Box>
   );
 }
