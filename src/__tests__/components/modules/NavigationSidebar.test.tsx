@@ -52,6 +52,7 @@ describe("NavigationSidebar Component", () => {
         <NavigationSidebar
           filterDataList={mockFilterDataList}
           categoryData={mockCategoryData}
+          isLoading={false}
         />
       </MemoryRouter>
     ).container;
@@ -64,6 +65,7 @@ describe("NavigationSidebar Component", () => {
         <NavigationSidebar
           filterDataList={mockFilterDataList}
           categoryData={mockCategoryData}
+          isLoading={false}
         />
       </MemoryRouter>
     );
@@ -82,6 +84,7 @@ describe("NavigationSidebar Component", () => {
         <NavigationSidebar
           filterDataList={mockFilterDataList}
           categoryData={alteredMockCategoryData}
+          isLoading={false}
         />
       </MemoryRouter>
     );
@@ -100,6 +103,7 @@ describe("NavigationSidebar Component", () => {
         <NavigationSidebar
           filterDataList={mockFilterDataList}
           categoryData={alteredMockCategoryData}
+          isLoading={false}
         />
       </MemoryRouter>
     );
@@ -113,6 +117,7 @@ describe("NavigationSidebar Component", () => {
         <NavigationSidebar
           filterDataList={mockFilterDataList}
           categoryData={mockCategoryData}
+          isLoading={false}
         />
       </MemoryRouter>
     );
@@ -126,6 +131,7 @@ describe("NavigationSidebar Component", () => {
         <NavigationSidebar
           filterDataList={mockFilterDataList}
           categoryData={mockCategoryData}
+          isLoading={false}
         />
       </MemoryRouter>
     );
@@ -145,6 +151,7 @@ describe("NavigationSidebar Component", () => {
         <NavigationSidebar
           filterDataList={mockFilterDataList}
           categoryData={alteredMockCategoryData}
+          isLoading={false}
         />
       </MemoryRouter>
     );
@@ -158,6 +165,7 @@ describe("NavigationSidebar Component", () => {
         <NavigationSidebar
           filterDataList={mockFilterDataList}
           categoryData={mockCategoryData}
+          isLoading={false}
         />
       </MemoryRouter>
     );
