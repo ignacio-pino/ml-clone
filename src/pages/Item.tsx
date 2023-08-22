@@ -1,4 +1,4 @@
-import { Box, Grid, GridItem } from "@chakra-ui/react";
+import { Box, Grid, GridItem, Skeleton } from "@chakra-ui/react";
 import Header from "../components/modules/Header";
 import {
   IAttributeListData,
@@ -90,6 +90,7 @@ export default function Item() {
         return fetchData(urlItemQuestions);
       })
       .then((questionsData) => {
+        console.log(questionsData.questions);
         setQuestions(questionsData.questions);
       })
       .finally(() => {
@@ -100,7 +101,17 @@ export default function Item() {
   return (
     <Box overflowX={"hidden"}>
       {isLoading ? (
-        <Header categoryId="" categoryName="" />
+        <>
+          <Header categoryId="" categoryName="" />
+          <Skeleton
+            isLoaded={!isLoading}
+            mx={"10vw"}
+            my={"9vh"}
+            h={"90vh"}
+            w={"75vw"}
+            borderRadius={"10px"}
+          ></Skeleton>
+        </>
       ) : (
         <>
           <Header categoryId="" categoryName="" />

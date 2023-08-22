@@ -1,4 +1,4 @@
-import { Grid, GridItem, Stack } from "@chakra-ui/react";
+import { Grid, GridItem, Skeleton, Stack } from "@chakra-ui/react";
 import NavigationSidebar from "../components/modules/NavigationSidebar";
 import { useEffect, useState } from "react";
 import { fetchData } from "../api/api";
@@ -19,6 +19,8 @@ import ProductList from "../components/modules/ProductList";
 export default function Products() {
   const { search } = useLocation();
   const searchParams = new URLSearchParams(search);
+
+  const [isLoading, setIsLoading] = useState(true);
 
   const [productDataList, setProductDataList] = useState<IProductListData[]>(
     []
@@ -43,6 +45,7 @@ export default function Products() {
   );
 
   useEffect(() => {
+    setIsLoading(true);
     fetchData(urlProductDataList).then(
       (data: {
         query: string;
@@ -69,6 +72,7 @@ export default function Products() {
           )?.values,
           query: data.query,
         });
+        setIsLoading(false);
       }
     );
   }, [search]);
@@ -84,19 +88,22 @@ export default function Products() {
           <NavigationSidebar
             filterDataList={filterDataList}
             categoryData={categoryData}
+            isLoading={isLoading}
           />
         </GridItem>
         <GridItem>
-          <Stack>
-            {sortData && (
-              <RelevanceSorter
-                selectedSort={sortData?.sort}
-                availableSorts={sortData?.available_sorts}
-              />
-            )}
+          <Skeleton isLoaded={!isLoading} h={"100vh"} ml={"4rem"}>
+            <Stack>
+              {sortData && (
+                <RelevanceSorter
+                  selectedSort={sortData?.sort}
+                  availableSorts={sortData?.available_sorts}
+                />
+              )}
 
-            <ProductList productDataList={productDataList} />
-          </Stack>
+              <ProductList productDataList={productDataList} />
+            </Stack>
+          </Skeleton>
         </GridItem>
       </Grid>
     </>
